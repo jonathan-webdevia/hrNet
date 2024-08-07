@@ -1,0 +1,128 @@
+#formContainer .title {
+    position: relative;
+}
+
+#formContainer .title img {
+    width: 20%;
+}
+
+#formContainer .title img.bubleImg {
+    width: 40%;
+    position: absolute;
+    top: -30%;
+    right: -25%;
+}
+
+
+#formContainer .title .jobSelector {
+    position: absolute;
+    width: 40%;
+    top: -20px;
+    right: -25%;
+    display: flex;
+    justify-content: center;
+}
+
+#formContainer .title .jobSelector select {
+    width: 80%;
+    height: 40px;
+    border: none;
+    color: #428e4c;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.3em;
+}
+
+#formContainer {
+    width: 100vw;
+    height: calc(100vh - 104px);
+    margin: 0;
+    flex-direction: column;
+}
+
+#formContainer form {
+    width: 40%;
+    border: 6px solid rgb(46, 33, 33);
+    background-color: rgb(46, 33, 33);
+    border-radius: 0 0 20px 20px;
+}
+
+#formContainer form > table {
+    width: 80%;
+    margin: 80px 0;
+}
+
+#formContainer form > table label {
+    margin: 0 5%;
+}
+
+#formContainer form > table input {
+    width: 90%;
+    margin: 5px 5%;
+    height: 30Px;
+    border: none;
+    border-radius: 10px;
+}
+
+#formContainer form > table input#department {
+    width: 400px;
+    opacity: 0;
+}
+
+#formContainer form > table fieldset {
+    margin: 20px 2.5%;
+}
+
+#formContainer form > table fieldset section {
+    display: flex;
+}
+
+#formContainer form > table fieldset section > div {
+    width: calc(100% / 3);
+    padding: 0 30px;
+}
+
+
+#formContainer form > table fieldset label {
+    margin: 0;
+}
+
+#formContainer form > table fieldset input {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#formContainer form > table fieldset select {
+    width: 100%;
+    margin: 10px 0;
+    height: 30Px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+#formContainer form .btn {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #C2F1C8;
+    color: #428e4c;
+}
+
+#formContainer .title {
+    width: calc( 40% - 40px);
+    padding: 60px 20px 0 20px;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 40px 40px 0 0;
+    border: 6px solid rgb(46, 33, 33);
+}
+
+#formContainer h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
