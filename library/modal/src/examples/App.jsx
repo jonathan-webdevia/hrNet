@@ -11,7 +11,7 @@ const App = () => {
 
   return (
     <React.StrictMode>
-      <h1>Bonjour</h1>
+      <h1>Example of returnModal use</h1>
       <button type="button" onClick={showModal}>
         Valider
       </button>
@@ -19,7 +19,7 @@ const App = () => {
         <Modal
           defaultState={true}
           type={"success"}
-          txt={"Un nouvel employé viens d'être crée !"}
+          txt={"A new employee has just been created !"}
           stateUPDT={showModal}
         />
       ) : (
