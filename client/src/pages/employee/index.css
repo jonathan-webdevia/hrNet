@@ -1,0 +1,14 @@
+.tableContainer {
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.table.container {
+    width: 60%;
+    font-size: 1.6em;
+}

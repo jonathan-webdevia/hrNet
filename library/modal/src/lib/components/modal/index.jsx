@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import "./index.css";
 
 const Modal = ({ defaultState, type, txt, stateUPDT }) => {
-  const [openedState, setOpenedState] = useState(defaultState);
-
-  if (openedState) {
+  if (defaultState) {
     return (
       <section className="modalContainer">
         <div className={`modal ${type}`}>

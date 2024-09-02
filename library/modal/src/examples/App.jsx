@@ -15,16 +15,12 @@ const App = () => {
       <button type="button" onClick={showModal}>
         Valider
       </button>
-      {modalBool ? (
-        <Modal
-          defaultState={true}
-          type={"success"}
-          txt={"A new employee has just been created !"}
-          stateUPDT={showModal}
-        />
-      ) : (
-        ""
-      )}
+      <Modal
+        defaultState={modalBool}
+        type={"success"}
+        txt={"A new employee has just been created !"}
+        stateUPDT={showModal}
+      />
     </React.StrictMode>
   );
 };

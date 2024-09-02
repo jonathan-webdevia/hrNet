@@ -126,3 +126,12 @@
     font-size: 3em;
     font-weight: bold;
 }
+
+/* UPDT STYLE OF DATEPICKER LIB */
+
+.react-datepicker-wrapper {
+    width: 100%;
+}
+.react-datepicker__input-container {
+    width:  100% !important;
+}
