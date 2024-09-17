@@ -3,11 +3,11 @@ import React from "react";
 import Navbar from "../../components/navBar";
 import EmployeeAdderForm from "../../components/employeeAdderForm";
 
-const Home = (updt) => {
+const Home = () => {
   return (
     <React.StrictMode>
       <Navbar link="currentEmployee" />
-      <EmployeeAdderForm updt={updt} />
+      <EmployeeAdderForm />
     </React.StrictMode>
   );
 };

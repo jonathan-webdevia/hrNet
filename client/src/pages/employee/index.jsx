@@ -8,7 +8,7 @@ import { DataTable } from "react-ab-data-table";
 import Navbar from "../../components/navBar";
 
 const Employee = () => {
-  const user = useContext(UserContext);
+  const { list } = useContext(UserContext);
 
   const columns = [
     { name: "First Name", id: "firstName", sortable: true },
@@ -28,10 +28,10 @@ const Employee = () => {
       <section className="tableContainer">
         <div id="employee-div" className="container table">
           <h1>Current Employees</h1>
-          {user ? (
+          {list ? (
             <DataTable
               columns={columns}
-              data={user}
+              data={list}
               tableId="employee"
               sortId="startDate"
             />

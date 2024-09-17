@@ -51,6 +51,7 @@
     margin: 80px 0;
 }
 
+
 #formContainer form > table label {
     margin: 0 5%;
 }
@@ -99,6 +100,9 @@
     border-radius: 10px;
 }
 
+#formContainer form > table fieldset select:focus {
+    outline: 0px;
+}
 
 #formContainer form .btn {
     width: 200px;
@@ -134,4 +138,37 @@
 }
 .react-datepicker__input-container {
     width:  100% !important;
+}
+
+@media screen and (max-width: 1500px) {
+    #formContainer form {
+        width: 60%;
+    }
+    #formContainer .title {
+        width: calc( 60% - 40px);
+    }
+    #formContainer .title img.bubleImg {
+        display: none;
+    }
+    #formContainer .title .jobSelector {
+        position: absolute;
+        width: auto !important;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #formContainer .title .jobSelector select {
+        width: min-content;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #formContainer form {
+        width: 95%;
+    }
+    #formContainer .title {
+        width: calc( 95% - 40px);
+    }
 }

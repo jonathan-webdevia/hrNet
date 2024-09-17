@@ -5,6 +5,7 @@ import buble from "../../assets/buble.png";
 import React from "react";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
+import Modal from "../modal";
 // import Modal from "modalresponser";
 
 import "react-datepicker/dist/react-datepicker.css";
@@ -12,9 +13,11 @@ import "react-datepicker/dist/react-datepicker.css";
 import { useContext } from "react";
 import UserContext from "../../utils/context";
 
-const EmployeeAdderForm = (updt) => {
-  const [userList, setUserList] = useState(useContext(UserContext));
-  console.log(userList);
+const EmployeeAdderForm = () => {
+  const { list, setList } = useContext(UserContext);
+  {
+    console.log(list);
+  }
 
   const [firstName, setFirstName] = useState("");
   const [department, setDepartment] = useState("");
@@ -31,36 +34,50 @@ const EmployeeAdderForm = (updt) => {
 
   const [modalBool, setModalBool] = useState(false);
 
+  const firstNameVal = document.querySelector("#firstName");
+  const lastName = document.querySelector("#lastName");
+  const state = document.querySelector("#state");
+  const zipCode = document.querySelector("#zipCode");
+  const departmentVal = document.querySelector("#department");
+
   const showModal = () => {
     setModalBool(!modalBool);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    updt.updt.updt(
-      userList.push({
-        firstName: "JOHN",
-        lastName: "Jo",
-        dateOfBirth: "08/04/2024",
-        startDate: "08/05/2024",
-        department: "Sales",
-        street: "32 RUE OB",
-        city: "Nancy",
-        state: "AL",
-        zipCode: "54000",
-      })
-    );
+
+    if (firstNameVal && lastName && state && zipCode && departmentVal) {
+      console.log("ok");
+    } else {
+      console.log("erreur");
+    }
+    const prevList = [...list];
+
+    prevList.push({
+      firstName: "JOHN",
+      lastName: "Jo",
+      dateOfBirth: "08/04/2024",
+      startDate: "08/05/2024",
+      department: "Sales",
+      street: "32 RUE OB",
+      city: "Nancy",
+      state: "AL",
+      zipCode: "54000",
+    });
+    setList(prevList);
+
     setModalBool(!modalBool);
   };
 
   return (
     <>
-      {/*<Modal
+      <Modal
         defaultState={modalBool}
         type={"success"}
         txt={"A new employee has just been created !"}
         stateUPDT={showModal}
-      />*/}
+      />
       <section id="formContainer" className="centerXY">
         <div className="title txt--dark">
           <h1>Create a new employee</h1>
