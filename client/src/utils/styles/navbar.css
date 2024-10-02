@@ -9,6 +9,8 @@ nav {
 
 nav img {
     width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
 
 nav button {

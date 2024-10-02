@@ -6,7 +6,7 @@ const Navbar = ({ link }) => {
   const navigate = useNavigate();
   return (
     <nav className="bg--dark centerXbetweenY">
-      <img src={logo}></img>
+      <img src={logo} alt="logo"></img>
       {link === "currentEmployee" ? (
         <button
           onClick={() => {

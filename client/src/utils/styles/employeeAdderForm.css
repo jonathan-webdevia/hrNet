@@ -3,7 +3,7 @@
 }
 
 #formContainer .title img {
-    width: 20%;
+    width: 180px;
 }
 
 #formContainer .title img.bubleImg {
@@ -64,8 +64,8 @@
     border-radius: 10px;
 }
 
-#formContainer form > table input#department {
-    width: 400px;
+.opac {
+    width: 0;
     opacity: 0;
 }
 
@@ -109,8 +109,8 @@
     height: 30px;
     border: none;
     border-radius: 10px;
-    background-color: #C2F1C8;
-    color: #428e4c;
+    background-color: #e4fee8;
+    color: #296231;
 }
 
 #formContainer .title {

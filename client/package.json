@@ -6,8 +6,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "a11y-dropdown-component": "^1.2.0",
-    "boolmodalop": "^1.0.1",
-    "modalresponser": "^1.0.1",
+    "pckgmodalbool": "^0.1.0",
     "react": "^18.3.1",
     "react-ab-data-table": "^0.0.6",
     "react-datepicker": "^7.3.0",
@@ -44,5 +43,14 @@
   "devDependencies": {
     "babel-cli": "^6.26.0"
   },
-  "main": "dist/index.js",  "module": "dist/index.js",  "files": [ "dist", "README.md" ],  "repository": {    "type": "git",    "url": "URL_OF_YOUR_REPOSITORY"  }
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "URL_OF_YOUR_REPOSITORY"
+  }
 }
