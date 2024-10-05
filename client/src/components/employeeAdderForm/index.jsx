@@ -90,12 +90,6 @@ const EmployeeAdderForm = () => {
     }
 
     setModalBool(!modalBool);
-
-    /* if (firstNameVal && lastName && state && zipCode && departmentVal) {
-    } else {
-      setType("error");
-      setTxt("Merci de vérifier votre saisie");
-    } */
   };
 
   return (
