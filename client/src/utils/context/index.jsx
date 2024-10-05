@@ -42,7 +42,6 @@ export const UserContextProvider = ({ children }) => {
 
   return (
     <UserContext.Provider value={{ list, setList }}>
-                      {/* value={( list, setList )} */}
       {children}
     </UserContext.Provider>
   );
